@@ -8,5 +8,4 @@ ADD of.ldif /tmp/of.ldif
 RUN debconf-set-selections /tmp/slapd.debconf
 RUN apt-get install slapd ldap-utils -y
 RUN slapadd -l /tmp/of.ldif
-#RUN ldapadd -x -w Secret007! -f /tmp/of.ldif -D 'cn=admin,dc=openforce,dc=org'
 ADD ldap.conf /etc/ldap/ldap.conf
