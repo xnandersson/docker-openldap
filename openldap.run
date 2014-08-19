@@ -1,1 +1,1 @@
-sudo docker run -t -i -P --hostname=openldap --name=openldap xnandersson/openldap /bin/bash
+sudo docker run -d -P --hostname=openldap --name=openldap xnandersson/openldap 
